@@ -42,13 +42,12 @@ if (socialToggle && socialMenu) {
 // Renderização dinâmica dos projetos
 document.addEventListener("DOMContentLoaded", () => {
   const projetos = [
-    { 
-      titulo: "Login Farmácia", 
-      descricao: "Tela de login para a farmácia Centro Farma.", 
-      imagem: "farmacialogo.png",   // imagem escolhida
-      link: "login.html" 
-    },
-   
+  {
+  titulo: "Login Farmácia",
+  descricao: "Tela de login para a farmácia Centro Farma.",
+  imagem: "farmacialogo - Copia.png", // imagem escolhida
+  link: "login.html"
+}
   ];
 
   const container = document.getElementById("projetos-container");
