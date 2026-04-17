@@ -1,0 +1,289 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #121212; /* fundo claro */
+  color: #333;              /* texto escuro */
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark {
+  background-color: #797878; /* fundo escuro */
+  color: #141414;               /* texto claro */
+}
+
+.header, .footer {
+  padding: 20px;
+  text-align: center;
+  background: #222;
+  color: #fff;
+}
+
+.menu-central {
+  display: flex;
+  flex-direction: column;   /* coloca os itens em coluna */
+  justify-content: center;  /* centraliza verticalmente */
+  align-items: center;      /* centraliza horizontalmente */
+  height: 100vh;            /* ocupa a tela inteira */
+  gap: 20px;                /* espaço entre os elementos */
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;                /* espaço entre os botões */
+  padding: 0;
+  margin: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  background: #f0f0f0;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.menu li a:hover {
+  background: #dcdcdc;
+}
+
+#toggle-theme {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #f0f0f0;
+  transition: background 0.3s ease;
+}
+
+#toggle-theme:hover {
+  background: #dcdcdc;
+}
+
+.projetos {
+  padding: 40px;
+  text-align: center;
+}
+
+.lista-projetos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+body.dark .card {
+  background: #1e1e1e;
+  color: #fff;
+}
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px; /* bordas arredondadas */
+  border: 2px solid #ddd; /* borda leve */
+  width: 250px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25); /* sombra mais visível */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.35); /* sombra mais forte no hover */
+}
+
+body.dark .card {
+  background: #1e1e1e;
+  color: #fff;
+  border: 2px solid #444; /* borda mais escura no tema dark */
+  box-shadow: 0 6px 15px rgba(255,255,255,0.1); /* sombra clara no dark */
+}
+/* Fundo animado */
+#tsparticles {
+  position: fixed;   /* ocupa toda a tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;       /* joga para trás do conteúdo */
+}
+/* Botão de alternar tema */
+#toggle-theme {
+  background: linear-gradient(135deg, #191a19, #7d7e7d); /* verde elegante */
+  color: #fff;
+  border: none;
+  border-radius: 25px; /* arredondado */
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+#toggle-theme:hover {
+  background: linear-gradient(135deg, #5b5c5b, #a6a7a6); /* tom mais claro no hover */
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+}
+
+body.dark #toggle-theme {
+  background: linear-gradient(135deg, #ff9800, #e65100); /* laranja no modo escuro */
+}
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-links a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+.footer {
+  position: fixed;       /* fixa no final da tela */
+  bottom: 0;             /* cola na parte inferior */
+  left: 0;
+  width: 100%;           /* ocupa toda a largura */
+  background: transparent; /* invisível */
+  color: inherit;        /* usa a cor do tema atual */
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  z-index: 10;           /* fica acima do fundo animado */
+}
+
+.social-container {
+  margin-top: 10px;
+}
+
+#social-toggle {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+#social-toggle:hover {
+  background: linear-gradient(135deg, #66bb6a, #388e3c);
+  transform: scale(1.05);
+}
+
+#social-menu {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+.social-container {
+  position: relative;
+  display: inline-block;
+}
+
+#social-toggle {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+#social-toggle:hover {
+  background: linear-gradient(135deg, #66bb6a, #388e3c);
+  transform: scale(1.05);
+}
+
+.social-menu {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: #929292;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+.social-menu.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}

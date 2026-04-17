@@ -1,0 +1,83 @@
+/* Fundo com imagem */
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Poppins, sans-serif;
+  background: url("centrofarma.png.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card centralizado */
+.login-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+}
+
+/* Logo + título */
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* espaço entre logo e texto */
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 40px; /* ajuste conforme sua imagem */
+  height: 40px;
+}
+
+/* Campos */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Botões */
+.btn-login {
+  background: #a79339;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-login:hover {
+  background: #1b5e20;
+}
+
+.btn-reset {
+  background: transparent;
+  color: #a79339;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+}

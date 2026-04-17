@@ -1,0 +1,64 @@
+/* Fundo inspirado em tela de login de farmácia */
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff, #c8e6c9);
+  display: flex;
+  justify-content: center;   /* centraliza horizontal */
+  align-items: center;       /* centraliza vertical */
+  color: #333;
+}
+
+/* Card estilizado */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #2e7d32; /* verde que remete à saúde/farmácia */
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+/* Container dos projetos */
+#projetos-container {
+  display: flex;
+  flex-wrap: wrap; /* permite quebrar linha */
+  gap: 20px;       /* espaço entre os cards */
+  justify-content: center; /* centraliza */
+  margin-top: 30px;
+}
+
+/* Estilo dos cards */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+/* Imagem dentro do card */
+.card-img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Efeito hover para mostrar que é clicável */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}

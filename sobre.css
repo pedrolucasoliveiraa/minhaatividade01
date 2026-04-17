@@ -1,0 +1,80 @@
+/* Fundo temático de jogos de tiro */
+body {
+  background: url("fundo-jogo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Container dos cards */
+.cards-container {
+  display: flex;
+  justify-content: center;   /* centraliza na horizontal */
+  align-items: center;       /* centraliza na vertical */
+  gap: 30px;
+  height: 100vh;             /* ocupa toda a altura da tela */
+}
+
+
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Imagens dentro dos cards */
+.card-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+/* Fundo dividido em duas imagens */
+body {
+  margin: 0;
+  height: 100vh;
+  background: 
+    url("fundoleao.png.jpeg") left center / 50% 100% no-repeat,
+    url("fundoz9.png.jpeg") right center / 50% 100% no-repeat;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+/* Cabeçalho transparente */
+header {
+  background: transparent; /* sem cor de fundo */
+  position: absolute; /* fica sobre o fundo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  z-index: 10; /* garante que fique por cima */
+}
+
+/* Container dos cards */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: auto; /* centraliza verticalmente */
+}
+
+/* Estilo dos cards */
+.card {
+  background: rgba(0,0,0,0.7);
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.8);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
